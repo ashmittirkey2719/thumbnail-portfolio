@@ -7,7 +7,7 @@ export default function Pricing() {
           Pricing
         </h2>
         <p className="text-white/60 mb-12 max-w-xl">
-          Simple pricing. No long-term contracts. Pay only for results.
+          Affordable thumbnail design pricing for YouTubers and content creators.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -16,7 +16,7 @@ export default function Pricing() {
           <div className="rounded-2xl border border-white/10 p-8 hover:border-white/30 transition">
             <h3 className="text-xl text-white mb-2">Starter</h3>
             <p className="text-white/60 mb-6">For new creators</p>
-            <p className="text-3xl text-white mb-6">₹499</p>
+            <p className="text-3xl text-white mb-6">₹499 / thumbnail</p>
             <ul className="text-white/70 space-y-3 mb-8">
               <li>✔ 1 Thumbnail</li>
               <li>✔ Fast Delivery</li>
@@ -36,7 +36,7 @@ export default function Pricing() {
           <div className="rounded-2xl border border-white p-8 bg-white/5 scale-[1.02]">
             <h3 className="text-xl text-white mb-2">Pro</h3>
             <p className="text-white/60 mb-6">Best for YouTubers</p>
-            <p className="text-3xl text-white mb-6">₹1,999</p>
+            <p className="text-3xl text-white mb-6">₹1,999 / 5 thumbnails</p>
             <ul className="text-white/70 space-y-3 mb-8">
               <li>✔ 5 Thumbnails</li>
               <li>✔ Priority Delivery</li>
@@ -57,7 +57,7 @@ export default function Pricing() {
           <div className="rounded-2xl border border-white/10 p-8 hover:border-white/30 transition">
             <h3 className="text-xl text-white mb-2">Premium</h3>
             <p className="text-white/60 mb-6">For serious growth</p>
-            <p className="text-3xl text-white mb-6">₹3,999</p>
+            <p className="text-3xl text-white mb-6">₹3,999 / 10 thumbnails</p>
             <ul className="text-white/70 space-y-3 mb-8">
               <li>✔ 10 Thumbnails</li>
               <li>✔ Fastest Delivery</li>

@@ -1,12 +1,14 @@
+"use client";
+
 export default function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/918114353707"
+      href="https://wa.me/91XXXXXXXXXX"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 flex items-center gap-3 rounded-full bg-green-500 px-5 py-3 text-white shadow-lg hover:scale-105 transition"
+      className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-400 text-white px-6 py-3 rounded-full shadow-lg shadow-green-500/30 transition-all hover:scale-105"
     >
-      <span className="text-sm font-medium">Chat on WhatsApp</span>
+      Chat on WhatsApp
     </a>
   );
 }
