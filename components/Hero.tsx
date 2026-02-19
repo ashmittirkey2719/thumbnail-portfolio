@@ -1,83 +1,43 @@
-'use client';
-
-import { motion } from "framer-motion";
+"use client";
 
 export default function Hero() {
   return (
-    <motion.section
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}
-      className="relative min-h-screen bg-black flex items-center justify-center overflow-hidden"
-    >
-      {/* Background */}
-      <div className="absolute inset-0 bg-black" />
+    <section className="relative min-h-screen flex items-center justify-center bg-black text-white overflow-hidden pt-24">
 
-      {/* Glow effects */}
-      <div className="absolute w-125 h-125 bg-white/5 rounded-full blur-3xl -top-25 -left-25" />
-      <div className="absolute w-100 h-100 bg-white/5 rounded-full blur-3xl -bottom-25 -right-25" />
+      {/* Background Glow */}
+      <div className="absolute w-96 h-96 bg-purple-600/20 blur-3xl rounded-full -top-24 -left-24" />
+      <div className="absolute w-80 h-80 bg-pink-500/20 blur-3xl rounded-full -bottom-24 -right-24" />
 
-      {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+      <div className="relative z-10 max-w-5xl mx-auto text-center px-6">
 
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-          className="mb-4 text-sm uppercase tracking-[0.3em] text-white/60"
-        >
-          Thumbnail Designer
-        </motion.p>
+        <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
+          Thumbnails That <span className="text-purple-500">Print Clicks</span>.
+        </h1>
 
-        <motion.h1
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 }}
-          className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6"
-        >
-          Thumbnails that <br />
-          <span className="bg-linear-to-r from-white to-gray-400 bg-clip-text text-transparent">
-            force clicks.
-          </span>
-        </motion.h1>
+        <p className="text-white/60 text-lg md:text-xl max-w-2xl mx-auto mb-10">
+          I design performance-focused YouTube thumbnails that increase CTR,
+          boost views, and grow serious creators.
+        </p>
 
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-          className="max-w-2xl mx-auto text-white/70 text-base md:text-lg mb-10"
-        >
-          I design high-CTR thumbnails for YouTubers & Instagram creators
-          who want more clicks, more views, and stronger personal brands.
-        </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.7 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
-        >
-          <motion.a
-            whileHover={{ scale: 1.08 }}
-            whileTap={{ scale: 0.95 }}
+        <div className="flex flex-col sm:flex-row gap-6 justify-center">
+          <a
             href="#work"
-            className="rounded-full bg-white text-black px-8 py-4 text-sm font-medium"
+            className="px-8 py-4 rounded-full bg-purple-600 hover:bg-purple-500 transition font-semibold shadow-lg shadow-purple-600/30"
           >
             View My Work
-          </motion.a>
+          </a>
 
-          <motion.a
-            whileHover={{ scale: 1.08 }}
-            whileTap={{ scale: 0.95 }}
+          <a
             href="https://wa.me/91XXXXXXXXXX"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full border border-white/30 px-8 py-4 text-sm text-white hover:bg-white hover:text-black transition"
+            className="px-8 py-4 rounded-full border border-white/20 hover:border-purple-500 transition"
           >
-            Hire Me on WhatsApp
-          </motion.a>
-        </motion.div>
+            Book a Thumbnail
+          </a>
+        </div>
+
       </div>
-    </motion.section>
+    </section>
   );
 }
