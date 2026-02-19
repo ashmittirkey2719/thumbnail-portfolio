@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import Work from '../components/Work';
 import BeforeAfter from '../components/BeforeAfter';
 import Pricing from '../components/Pricing';
+import Footer from "../components/Footer";
 
 export default function Page() {
   return (
@@ -12,6 +13,9 @@ export default function Page() {
       <Work />
       <BeforeAfter />
       <Pricing />
+      <Footer />
+
+
     </>
   );
 }

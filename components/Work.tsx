@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import useReveal from "./useReveal";
 
 const thumbnails = [
   'https://via.placeholder.com/800x450?text=Thumbnail+Coming+Soon',
@@ -8,6 +9,7 @@ const thumbnails = [
 
 
 export default function Work() {
+  useReveal();
   return (
     <section id="work" className="bg-black py-24">
       <div className="max-w-6xl mx-auto px-6">
