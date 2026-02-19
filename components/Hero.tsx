@@ -5,25 +5,18 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center bg-black text-white overflow-hidden pt-24">
 
       {/* Floating Particles */}
-<div className="particles">
-  {Array.from({ length: 20 }).map((_, i) => (
-    <span
-      key={i}
-      style={{
-        left: `${Math.random() * 100}%`,
-        animationDuration: `${10 + Math.random() * 20}s`,
-        animationDelay: `${Math.random() * 5}s`
-      }}
-    />
-  ))}
-</div>
-
-
-      {/* Animated Background */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute w-96 h-96 bg-purple-600/20 rounded-full blur-3xl animate-pulse -top-32 -left-32"></div>
-        <div className="absolute w-80 h-80 bg-pink-500/20 rounded-full blur-3xl animate-pulse -bottom-32 -right-32"></div>
+        <span className="particle p1"></span>
+        <span className="particle p2"></span>
+        <span className="particle p3"></span>
+        <span className="particle p4"></span>
+        <span className="particle p5"></span>
+        <span className="particle p6"></span>
       </div>
+
+      {/* Glow */}
+      <div className="absolute w-96 h-96 bg-purple-600/20 rounded-full blur-3xl -top-32 -left-32" />
+      <div className="absolute w-80 h-80 bg-pink-500/20 rounded-full blur-3xl -bottom-32 -right-32" />
 
       <div className="relative z-10 max-w-5xl mx-auto text-center px-6">
 

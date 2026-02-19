@@ -4,6 +4,9 @@ import { useState } from "react";
 export default function BeforeAfter() {
   const [position, setPosition] = useState(50);
 
+  // round to nearest 10 to match clip classes
+  const rounded = Math.round(position / 10) * 10;
+
   return (
     <section className="py-24 bg-black text-white px-6">
       <div className="max-w-5xl mx-auto text-center mb-12">
@@ -17,18 +20,15 @@ export default function BeforeAfter() {
 
       <div className="relative max-w-4xl mx-auto rounded-2xl overflow-hidden border border-white/10">
 
-        {/* AFTER IMAGE */}
+        {/* AFTER */}
         <img
           src="/thumbnails/after.png"
           alt="After Thumbnail"
           className="w-full select-none"
         />
 
-        {/* BEFORE IMAGE */}
-        <div
-          className="absolute top-0 left-0 h-full overflow-hidden transition-all duration-200"
-          style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
-        >
+        {/* BEFORE */}
+        <div className={`before-mask clip-${rounded}`}>
           <img
             src="/thumbnails/before.png"
             alt="Before Thumbnail"
@@ -46,6 +46,7 @@ export default function BeforeAfter() {
           type="range"
           min="0"
           max="100"
+          step="10"
           value={position}
           onChange={(e) => setPosition(Number(e.target.value))}
           className="absolute bottom-4 left-1/2 -translate-x-1/2 w-1/2 cursor-pointer accent-purple-600"
