@@ -1,8 +1,12 @@
+"use client";
+
 import useReveal from "./useReveal";
-export default function Pricing(){
+
+export default function Pricing() {
   useReveal();
+
   return (
-    <section className="py-24 bg-black text-white px-6">
+    <section className="py-24 bg-black text-white px-6 fade-up">
       <div className="max-w-6xl mx-auto text-center mb-16">
         <h2 className="text-4xl md:text-5xl font-bold">
           Elite <span className="text-purple-500">Pricing</span>
