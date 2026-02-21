@@ -16,11 +16,30 @@
 .p5 { left: 70%; animation-delay: 3s; animation-duration: 14s; }
 .p6 { left: 85%; animation-delay: 5s; animation-duration: 17s; }
 
+/* FLOAT PARTICLES */
 @keyframes float {
   0% { transform: translateY(100vh); opacity: 0; }
   20% { opacity: 1; }
   100% { transform: translateY(-10vh); opacity: 0; }
 }
+
+.particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: rgba(168, 85, 247, 0.4);
+  border-radius: 50%;
+  animation: float linear infinite;
+}
+
+.p1 { left: 10%; animation-delay: 0s; animation-duration: 12s; }
+.p2 { left: 25%; animation-delay: 2s; animation-duration: 18s; }
+.p3 { left: 40%; animation-delay: 4s; animation-duration: 15s; }
+.p4 { left: 55%; animation-delay: 1s; animation-duration: 20s; }
+.p5 { left: 70%; animation-delay: 3s; animation-duration: 14s; }
+.p6 { left: 85%; animation-delay: 5s; animation-duration: 17s; }
+
+/* BEFORE AFTER SLIDER */
 .before-mask {
   position: absolute;
   top: 0;

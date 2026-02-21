@@ -5,14 +5,15 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center bg-black text-white overflow-hidden pt-24">
 
       {/* Floating Particles */}
-      <div className="absolute inset-0 -z-10 overflow-hidden">
-        <span className="particle p1"></span>
-        <span className="particle p2"></span>
-        <span className="particle p3"></span>
-        <span className="particle p4"></span>
-        <span className="particle p5"></span>
-        <span className="particle p6"></span>
-      </div>
+<div className="absolute inset-0 -z-10 overflow-hidden">
+    <span className="particle p1" />
+    <span className="particle p2" />
+    <span className="particle p3" />
+    <span className="particle p4" />
+    <span className="particle p5" />
+    <span className="particle p6" />
+</div>
+      
 
       {/* Glow */}
       <div className="absolute w-96 h-96 bg-purple-600/20 rounded-full blur-3xl -top-32 -left-32" />
