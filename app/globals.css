@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* YOUR CUSTOM CSS BELOW */
-
+/* Floating particles */
 .particle {
   position: absolute;
   width: 8px;
